@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Club Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Important: Load Groq first -->
+    <script src="https://cdn.jsdelivr.net/npm/groq-sdk@0.3.0/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.19.2/dist/ort.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.19/dist/bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <h1>AWS Cloud Club Voice Assistant</h1>
+        <button id="micButton" class="mic-button">
+            🎤
+        </button>
+        <div id="status" class="status">Click microphone to begin</div>
+        <div id="transcription" class="transcription"></div>
+        <div id="response" class="response"></div>
+    </div>
+
+    <script src="pdfContent.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
